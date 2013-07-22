@@ -1,0 +1,9 @@
+name = Animals
+description = "Provides content types and functionality suitable for animal rescue or similar organizations."
+package = *Incubator
+core = 7.x
+
+incubator_weight = 50
+incubator_nodetype = animal
+
+dependencies[] = incubator
