@@ -30,13 +30,13 @@ function incubator_animals_enable() {
   
 }
 
-function incubator_news_disable() {
+function incubator_animals_disable() {
   module_load_install('incubator');
   _incubator_delete_nodetype('animal');
   $role = user_role_load_by_name('zookeeper');
   user_role_change_permissions($role->rid, array());
 }
 
-function incubator_news_uninstall() {
+function incubator_animals_uninstall() {
   user_role_delete('zookeeper');
 }
